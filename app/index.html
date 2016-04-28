@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Webstorage Task</title>
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<form role="form">
+			<div class="form-group">
+				<label class="control-label" for="first_name">First Name: </label>
+				<input class="form-control" type="text" id="first_name">
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="last_name">Last Name: </label>
+				<input class="form-control" type="text" id="last_name">
+			</div>
+			<div class="form-group">
+				<label class="control-label" for="birthday">Birthday: </label>
+				<input class="form-control" type="date" id="birthday">
+			</div>
+			<div class="form-group">
+				<input class="btn btn-primary" type="submit" id="submit" value='Save'>
+			</div>
+		</form>
+		
+		<div class="btn-group toolbar">
+			<button type="button" id="deleteBtn" class="btn btn-warning">Delete</button>
+			<button type="button" id="clearBtn" class="btn btn-danger">Clear</button>
+		</div>
+
+		<div class="table-responsive">
+			<table class="table table-stripped table-bordered table-condensed">
+				<thead>
+				</thead>
+				<tbody class="table-hover">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<script src="js/ws-module.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
